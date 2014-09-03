@@ -1,23 +1,18 @@
 
 
-/* Controllers */
+/* Controllers */ 
+var phonecatControllers = angular.module('phonecatControllers', []);
 
+phonecatControllers.controller('PhoneListCtrl', ['$scope', '$http',
+  function ($scope, $http) {
+    $http.get('phones/phones.json').success(function(data) {
+      $scope.phones = data;
+    });
 
-var phonecatApp = angular.module('phonecatApp', []); 
+    $scope.orderProp = 'age';
+  }]);
 
-phonecatApp.controller('PhoneListCtrl', function ($scope){
-	$scope.phones =[
-		{'name': 'Nexus S', 
-		'snippet': 'Fast just got faster with Nexus S.'}, 
-		{'name': 'Motorola Xoom with Wi-Fi', 
-		'snippet': 'The Next, Next Generation tablet.'}, 
-		{'name': 'MOTOROLA XOOM', 
-		'snippet': 'The Next, Next Generation tablet.'}, 
-		];
-
-	$scope.name = "World"; 
-
-
-});
-
-
+phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.phoneId = $routeParams.phoneId;
+  }]);

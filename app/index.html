@@ -1,52 +1,19 @@
 
 
 <!doctype html>
-<html ng-app="phonecatApp" ng-controller="PhoneListCtrl">
+<html lang="en" ng-app="phonecatApp">
 <head>
   <meta charset="utf-8">
   <title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="bower_components/angular/angular.js"></script>
-  <script src="js/controllers.js"></script> 
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
 </head>
 <body>
-
-	<div class="container=fluid">
-		<div class="row"> 
-			<div class="col-md-2"> 
-
-
-				<!-- Sidebar Content  | Search Box --> 
-				Search: <input ng-model="query"> 
-			
-			</div>
-			<div class="col-md-10">
-
-				<!-- Body Content --> 
-				
-				<ul class="phones">
-
-					<li ng-repeat="phone in phones | filter:query">
-						{{phone.name}}
-						<p>{{phone.snippet}}</p>
-					</li> 
-				</ul> 
-
-				<!-- Extra Stuff --> 
-				<p> Total number of phones: {{phones.length}}</p> 
-				<p>Hello, {{name}}!</p> 
-				<table>
-					<tr><th>row number</th></tr>
-					<tr ng-repeat="i in [0,1,2,3,4,5,6,7]">
-						<td>{{i+1}}</td>
-					</tr> 
-				</table>
-
-			</div> 
-		</div> 
-	</div> 
-
+	<div ng-view></div>
 
 </body>
 </html>
