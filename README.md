@@ -1,14 +1,26 @@
+Notes
+
 - in order for the page to work correctly, 
 	start the server and make sure that it runs on the url,
 	local:8000 for example 
 
 - using ngSrc prevents the browsers from making an http request 	to an invalid location
 
-- 
 
 
 
 
+----------------------------------------------------------------
+Bugs
+
+
+- had serious issues installing Bower, had to force it with 
+  sudo npm install-g bower and make sure that the node version
+  was up to date
+    https://blogs.oracle.com/geertjan/entry/angularjs_seed_bower_and_netbeans
+
+
+- was missing css, had bugs with the display/view
 
 
 
