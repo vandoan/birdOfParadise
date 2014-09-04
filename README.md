@@ -46,7 +46,17 @@ app/phones/phones.json (sample snippet):
   ...
 ]
 
------
+----------------------------------------------------------------
+Sublime 
+
+- sidebar 
+  cmd + k and cmd +b
+
+- skip to line
+  ctrl + g and number 
+ 
+- move tabs 
+  opt+cmd  and arrow key
 
 
 
