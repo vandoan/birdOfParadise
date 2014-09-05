@@ -14,11 +14,17 @@
   <script src="js/filters.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="js/services.js"></script>
+    <link rel="stylesheet" href="css/animations.css">
+  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="js/animations.js"></script>
+
 
 </head>
 <body>
-	<div ng-view></div>
-
+<div class="view-container">
+  <div ng-view class="view-frame"></div>
+</div>
 </body>
 </html>
 

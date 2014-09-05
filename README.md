@@ -20,10 +20,13 @@ Bugs
     https://blogs.oracle.com/geertjan/entry/angularjs_seed_bower_and_netbeans
 
 
+
+
 - was missing css, had bugs with the display/view
 
+- had to do a git reset on the the 11th tutorial, as there was a serious bug. 2nd attempt was a success. bower was generating the files out side of the app
 
-
+- tut 12, the bower animate file was generated outside of the bower file in another bower file outside of the app, causing the problem
 
 
 
@@ -58,7 +61,8 @@ Sublime
 - move tabs 
   opt+cmd  and arrow key
 
-
+- up|down sidebar 
+  ctrl + 0
 
 
 
